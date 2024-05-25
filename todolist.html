@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="stylelist.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List <img src="C:\Users\Jayas\OneDrive\Documents\icon image.jpg" alt="icon"></h2>
+            <div class="row">
+                <input type="text" name="" id="input-box" placeholder="Add your Text">
+                <button onclick="addTask()">Add Task</button>
+            </div>
+            <div class="filters">
+                <div class="filter" data-filter="all" onclick="filterTasks('all')">All</div>
+                <div class="filter" data-filter="completed" onclick="filterTasks('completed')">Completed</div>
+                <div class="filter" data-filter="pending" onclick="filterTasks('pending')">Incomplete</div>
+                <div class="delete-all" onclick="deleteAllTasks()">Delete All</div>
+            </div>
+            <ul id="list-container"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
